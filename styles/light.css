@@ -9,26 +9,19 @@
     visibility: hidden;
   }
 
-  .header__theme-menu-button_type_dark {
-    border: none;
-  }
-
-  .header__theme-menu-button_type_light {
-    border: 1px solid #353430;
-  }
-
   :root {
     --accent-color: #353430;
     --title-bg: #ff8dcb;
     --main-title-color: #ffc2e6;
     --title-shadow: #ff0070;
-    --background-image: url(/images/cover-image-light.png);
+    --background-header: url(/images/cover-image-light.png);
     --nav-button-hover: rgba(50, 49, 45, 0.4);
     --nav-button-focus: rgba(50, 49, 45, 0.4);
     --title-color: #353430;
     --text-color: #353430;
-    --bg-main_footer: #fcecf3;
+    --background-image: #fcecf3;
     --link-color: #353430;
+    --color-title-dop:#353430;
   }
 }
 
@@ -37,4 +30,17 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+  --accent-color: #353430;
+  --title-bg: #ff8dcb;
+  --main-title-color: #ffc2e6;
+  --title-shadow: #ff0070;
+  --background-image: url(/images/cover-image-light.png);
+  --nav-button-hover: rgba(50, 49, 45, 0.4);
+  --nav-button-focus: rgba(50, 49, 45, 0.4);
+  --title-color: #353430;
+  --text-color: #353430;
+  --bg-main_footer: #fcecf3;
+  --link-color: #353430;
+  --color-title-dop:#353430;
 }

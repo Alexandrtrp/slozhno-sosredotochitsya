@@ -1,12 +1,13 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+/* У меня цветовые темы спокойно переключаются, 
+не знаю почему у вас нет. */
+
 .page {
-  background-image: var(--background-image);
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
   font-family: "IBM Plex Mono", monospace;
+  background: var(--background-image);
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -15,6 +16,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  min-height: 668px;
+  height: 100vh;
+  background-image: var(--background-header);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .decorated-zone::before {
@@ -45,7 +51,7 @@
   justify-content: flex-end;
 }
 
-.header__theme-menu-button_type_active {
+.header__theme-menu-button_active {
   pointer-events: none;
 }
 
@@ -62,7 +68,7 @@
   gap: 10px;
   color: var(--accent-color);
   text-align: right;
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono", monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -77,9 +83,8 @@
   height: 9px;
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
-  border-radius: 4.5px;
-  filter: drop-shadow(0px 0px 4px var(--accent-color));
-  box-shadow: 0px 0px 4px var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
 }
 
 .header__theme-menu-list {
@@ -98,6 +103,7 @@
   line-height: 18px;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
@@ -107,10 +113,6 @@
 .header__theme-menu-item {
   display: flex;
   align-items: center;
-}
-
-.header__theme-menu-button_type_dark {
-  border: 1px solid var(--accent-color);
 }
 
 .header__theme-menu-button:hover {
@@ -140,22 +142,29 @@
   border: 1px solid var(--link-color);
 }
 
-.header-title {
+.major-title {
   color: var(--main-title-color);
   text-shadow: 4px 4px 0px var(--title-shadow);
   font-weight: 700;
   line-height: 82.5%;
+
+  /* Вы прислали скриншот где отступы у заголовка одиннаковые,
+  но они там показаны относительно границ хедера, а тут я задаю отступы
+  относительно блока навигации и блока с текстом */
   padding: 66px 0 55px;
+
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
 .text-shadow {
-  text-shadow: 1px 2px 0px var(--title-bg);
+  text-shadow: 2px 2px 0px var(--title-bg);
+  border: none;
+  text-decoration: none;
 }
 
 .title-dop {
   background: var(--title-bg);
-  color: #000028;
+  color: var(--color-title-dop);
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -180,11 +189,6 @@
   margin-top: 20px;
 }
 
-main,
-footer {
-  background: var(--bg-main_footer);
-}
-
 .text {
   color: var(--text-color);
   font-size: 18px;
@@ -193,7 +197,7 @@ footer {
   margin-top: 10px;
 }
 
-footer > .header-title {
+footer > .major-title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,6 +214,12 @@ footer > .header-title {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 668px;
+  height: 100vh;
+}
+
+.major-title-footer {
+  text-shadow: 2px 2px 0 var(--title-shadow);
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -217,8 +227,12 @@ footer > .header-title {
     padding: 0 0 183px 0;
   }
 
+  .rec-wbr {
+    padding: 20px 20px 0;
+  }
+
   .header__theme-menu {
-    padding: 20px 20px 0 20px;
+    padding: 0 20px;
   }
 
   .decorated-zone::before {
@@ -230,7 +244,7 @@ footer > .header-title {
     padding-top: 147.5px;
   }
 
-  .header-title {
+  .major-title {
     padding: 173px 0 162px;
   }
 
@@ -368,7 +382,7 @@ footer > .header-title {
     padding-inline-start: 0;
   }
 
-  .header-title {
+  .major-title {
     font-size: 157px;
     padding: 274px 0 114px;
   }
@@ -464,6 +478,14 @@ footer > .header-title {
   }
 
   .footer > .header-title {
+    padding: 0;
+  }
+
+  .footer {
+    height: 768px;
+  }
+
+  .major-title-footer {
     padding: 0;
   }
 }
