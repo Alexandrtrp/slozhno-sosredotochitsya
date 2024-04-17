@@ -4,6 +4,22 @@
   переключая тему
 */
 
+:root{
+  --accent-color: #ff0070;
+  --title-bg: #ff0070;
+  --main-title-color: #db00ff;
+  --title-color: #ff0070;
+  --title-shadow: #ff0070;
+  --background-header: url(/images/cover-image-dark.png);
+  --nav-button-hover: rgba(255, 0, 112, 0.4);
+  --nav-button-focus: #ff0070;
+  --text-color: #f1b2ce;
+  --background-color: #000028;
+  --link-color: #f1b2ce;
+  --color-title-dop:#000028;
+  --button-active-border:#FF0070;
+}
+
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -19,9 +35,10 @@
   --nav-button-hover: rgba(255, 0, 112, 0.4);
   --nav-button-focus: #ff0070;
   --text-color: #f1b2ce;
-  --background-image: #000028;
+  --background-color: #000028;
   --link-color: #f1b2ce;
   --color-title-dop:#000028;
+  --button-active-border:#FF0070;
 
   .rec-wbr {
     visibility: visible;

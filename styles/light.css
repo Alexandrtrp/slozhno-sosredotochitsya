@@ -19,9 +19,10 @@
     --nav-button-focus: rgba(50, 49, 45, 0.4);
     --title-color: #353430;
     --text-color: #353430;
-    --background-image: #fcecf3;
+    --background-color: #fcecf3;
     --link-color: #353430;
     --color-title-dop:#353430;
+    --button-active-border:#353430;
   }
 }
 
@@ -30,6 +31,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  
 
   --accent-color: #353430;
   --title-bg: #ff8dcb;
@@ -40,7 +42,8 @@
   --nav-button-focus: rgba(50, 49, 45, 0.4);
   --title-color: #353430;
   --text-color: #353430;
-  --bg-main_footer: #fcecf3;
+  --background-color: #fcecf3;
   --link-color: #353430;
   --color-title-dop:#353430;
+  --button-active-border:#353430;
 }

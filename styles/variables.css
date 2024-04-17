@@ -13,7 +13,8 @@
   --nav-button-hover: rgba(255, 0, 112, 0.4);
   --nav-button-focus: #ff0070;
   --text-color: #f1b2ce;
-  --background-image: #000028;
+  --background-color: #000028;
   --link-color: #f1b2ce;
   --color-title-dop:#000028;
+  --button-active-border:#353430;
 }
