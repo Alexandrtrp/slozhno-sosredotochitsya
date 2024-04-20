@@ -10,14 +10,14 @@
   --main-title-color: #db00ff;
   --title-color: #ff0070;
   --title-shadow: #ff0070;
-  --background-header: url(/images/cover-image-dark.png);
+  --background-page: url(/images/cover-image-dark.png);
   --nav-button-hover: rgba(255, 0, 112, 0.4);
   --nav-button-focus: #ff0070;
   --text-color: #f1b2ce;
-  --background-color: #000028;
   --link-color: #f1b2ce;
   --color-title-dop:#000028;
   --button-active-border:#FF0070;
+  --visibility: visible;
 }
 
 .page.theme_dark {
@@ -31,16 +31,12 @@
   --main-title-color: #db00ff;
   --title-color: #ff0070;
   --title-shadow: #ff0070;
-  --background-header: url(/images/cover-image-dark.png);
+  --background-page: url(/images/cover-image-dark.png);
   --nav-button-hover: rgba(255, 0, 112, 0.4);
   --nav-button-focus: #ff0070;
   --text-color: #f1b2ce;
-  --background-color: #000028;
   --link-color: #f1b2ce;
   --color-title-dop:#000028;
   --button-active-border:#FF0070;
-
-  .rec-wbr {
-    visibility: visible;
-  }
+  --visibility: visible;
 }
